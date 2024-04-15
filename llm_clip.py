@@ -9,6 +9,7 @@ import io
 @llm.hookimpl
 def register_embedding_models(register):
     register(ClipEmbeddingModel())
+    register(SigLIPEmbeddingModel())
 
 
 class ClipEmbeddingModel(llm.EmbeddingModel):
